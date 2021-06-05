@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 2px solid red;
+    margin: 3px 0;
+    background: cyan;
+    padding: 9px;
+}
+
+.ishankoclass{
+    background-color: blue;
+}
