@@ -396,5 +396,53 @@ At a very high level, there are two types of data-types
    //ARU PANI DIFFERENT EVENTS HUNCHA JUST CONSULT GOOGLE//
 
 
-//setTimeout and setInterval
+/* Arrow functions
+
+        /* It is the alternative of the following function code:
+            function sum(a,b){
+                return a+b;
+            }
+            
+         sum = (a,b)=>{
+             return a+b;
+         }
+*/
+
+/*setTimeout and setInterval
+
+    setTimeout chahi schedule garaunu paryo bhaney
+
+    logGarr = ()=>{
+        console.log("I am your log");
+    }
+     setTimeout(logGarr, 1000);  //logGarr chahi function ra 100 chahi time in milliseconds
+     (yo schedule pani stop garna clearTimeout() garney )
+     
+
+    setInterval chahi kei kura certain time pachi repeat gariraakhnu paryo bhaney
+        logGarr = ()=>{
+            console.log("I am LOG");
+        }
+        setInterval(logGarr,2000)
+        (yeslai banda garna chahi console ma clearInterval() garda huncha)
         
+*/
+
+/*Local Storgae in JS
+
+localStorage.setItem();
+localStorage.getItem();
+localStorage.removeItem();
+localStorage.clear();
+*/
+
+//JSON
+        //JSON accepts strings in double quotations only
+        obj = {name: "Ishan", a: {this: "that"}}; 
+        jso = JSON.stringify(obj);  //converting object into json string
+        
+        console.log(typeof jso);
+        console.log(jso);
+        
+        parsed = JSON.parse(`{"name":"Ishan","a":{"this":"that"}}`);//escape tala ra tab mathi ko "BACKTICK"
+        console.log(parsed);                                        //key use garnu parcha
