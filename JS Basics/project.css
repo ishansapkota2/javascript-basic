@@ -1,0 +1,68 @@
+html{
+    box-sizing: border-box;
+  }
+  *, *:before, *:after{
+    box-sizing: inherit;
+  }
+    body{
+      margin: 0;
+      padding: 0;
+    }
+
+
+/* ANALOG  CLOCK OF NEPAL*/
+
+#clockNepal{
+    position: relative;
+    margin: auto;
+    
+    background: url(download.png);
+    height: 200px;
+    width: 200px;
+    background-size: 100%;
+}
+
+#hour1, #minute1, #second1{
+    position: absolute;
+    background: black;
+    border-radius: 5px;
+    transform-origin: bottom;
+}
+#hour1{
+   
+    width: 4px;
+    height: 45px;
+    top: 55px;
+    left: 49.6%;
+    
+}
+#minute1{
+
+    width: 3px;
+    height: 84px;
+    top: 15px;
+    left: 49.5%;
+    
+}
+#second1{
+    width: 2px;
+    height: 88px;
+    top: 11px;
+    left: 50%;
+    background: red;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+   
+}
+
+/* ANALOG CLOCK FOR LONDON */
+
+
+#clockLondon{
+    margin: auto;
+    background: url(download.png);
+    height: 200px;
+    width: 200px;
+    background-size: 100%;
+    
+}

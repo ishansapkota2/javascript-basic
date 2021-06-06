@@ -4,16 +4,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+`   <link rel="stylesheet" href="project.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>YEP Clock!</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Time</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,12 +51,47 @@
 
       <div class="container my-4">
         <div class="jumbotron">
-            <h1 class="display-4">Current Time is: <span id="time"></span></h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <h1 class="display-4">Current Time of NEPAL is: <span id="time"></span></h1>
+                <div id="clockNepal">
+                    <div id="hour1"></div>
+                    <div id="minute1"></div>
+                    <div id="second1"></div>
+                </div>
+            <p class="lead">I always had to check for different time-zones every single time as I watch alot of football and MMA .<br>So this is an all in one place where I can find all the timezones I need.</p>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p>We are here to show you the time for different countries.</p>
+             
             <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Browse Times</a>
+              <p>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                 Browse Time
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <div class="different_times">
+                      <div id="londonTime">
+                           
+                      </div>
+                      <div id="clockLondon">
+                        <div id="hour2"></div>
+                        <div id="minute2"></div>
+                        <div id="second2"></div>
+                    </div>
+                      <div id="newyorkTime">
+
+                      </div>
+
+                      <div id="laTime">
+
+                      </div>
+                      
+                      <div id="romeTime">
+
+                      </div>
+                  </div>
+                </div>
+              </div>
             </p>
           </div>
       </div>
@@ -76,7 +111,7 @@
 
 
 
-
+      <script src="project.js"></script>
 
 
 
