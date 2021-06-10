@@ -346,7 +346,8 @@ At a very high level, there are two types of data-types
             console.log("The window was reloaded.")
         }
         */
-    /* DIFFERENT MOUSE EVENTS
+    // DIFFERENT MOUSE EVENTS
+
     firstContainer.addEventListener('click',function(){
         console.log("Click Bhayo");
     })
@@ -366,7 +367,7 @@ At a very high level, there are two types of data-types
     firstContainer.addEventListener('mousedown',function(){
         console.log("Musa tala gayo");
     })
-    */
+    
 
     /* euta specific mouse event lai choose garera euta task carry out gareko
     
@@ -436,7 +437,7 @@ localStorage.removeItem();
 localStorage.clear();
 */
 
-//JSON
+/*JSON
         //JSON accepts strings in double quotations only
         obj = {name: "Ishan", a: {this: "that"}}; 
         jso = JSON.stringify(obj);  //converting object into json string
@@ -446,3 +447,5 @@ localStorage.clear();
         
         parsed = JSON.parse(`{"name":"Ishan","a":{"this":"that"}}`);//escape tala ra tab mathi ko "BACKTICK"
         console.log(parsed);                                        //key use garnu parcha
+
+*/

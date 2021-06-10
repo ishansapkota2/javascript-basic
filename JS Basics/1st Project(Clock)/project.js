@@ -1,3 +1,14 @@
+//for button primary
+    document.getElementById("btn-primary").addEventListener('mouseover', function(){
+    document.getElementById("btn-primary").style.background = 'red';
+});
+   
+document.getElementById("btn-primary").addEventListener('mouseout', function(){
+    document.getElementById("btn-primary").style.background = '#0d6efd';
+});
+document.getElementById("btn-primary").style.textTransform = "uppercase";
+
+
 //FOR LOCAL TIME i.e KATHMANDU
 let a;
 let time;
@@ -18,6 +29,7 @@ setInterval(() => {
     a1 = new Date();
     time1 = a1.toLocaleString("en-Us",{timeZone:"Europe/London",timeStyle:"full",hourCycle:"h24"});
     document.getElementById("londonTime").innerHTML = "LONDON TIME:<br>"+ time1;
+    document.getElementById("londonTime").style.fontSize = "larger";
 }, 1000);
 
 /*ALTERNATIVE METHOD (1 LINE MAI HUNEY)
@@ -38,6 +50,7 @@ setInterval(() => {
     a2 = new Date();
     time2 = a2.toLocaleTimeString("en-Us",{timeZone:"America/New_York",timeStyle:"full",hourCycle:"h24"});
     document.getElementById("newyorkTime").innerHTML = "<br>EASTERN STANDARD TIME :<br>"+ time2;
+    document.getElementById("newyorkTime").style.fontSize = "larger";
 }, 1000);
 
 //FOR PACIFIC STANDARD TIME
@@ -49,6 +62,8 @@ setInterval(() => {
 a3 = new Date();
 time3 = a3.toLocaleTimeString("en-US",{timeZone:"America/Los_Angeles",timeStyle:"full",hourCycle:"h24"});
 document.getElementById("laTime").innerHTML = "<br>LA TIME:<br>" + time3;
+document.getElementById("laTime").style.fontSize = "larger";
+document.getElementById("laTime").style.marginBottom = "10px";
 }, 1000);
 
 //FOR ROME TIME
@@ -60,6 +75,7 @@ setInterval(() => {
 a4 = new Date();
 time4 = a4.toLocaleTimeString("en-US",{timeZone:"Europe/Rome",timeStyle:"full",hourCycle:"h24"});
 document.getElementById("romeTime").innerHTML = "<br>ROME TIME: <br>" + time4;
+document.getElementById("romeTime").style.fontSize = "larger";
 }, 1000);
 
 //FOR NEPAL ANALOG CLOCK
@@ -178,3 +194,57 @@ minute5.style.transform = `rotate(${mrotation5}deg)`;
 second5.style.transform = `rotate(${srotation5}deg)`;
     
 }, 1000);
+
+
+//COUNTDOWN FOR EUROs
+
+let kickoffTime;
+let currentTime;
+let timeLeft;
+
+/* ALTERNATIVE WAY OF GETTING TIME 
+kickoffTime = new Date("June 12 2021 00:45:00").getTime();
+
+    
+//     currentTime = new Date().getTime();
+//     timeLeft = kickoffTime - currentTime;
+     console.log(timeLeft);*/
+    
+kickoffTime = new Date("June 12 2021 00:45:00");
+
+setInterval(() => {
+    
+    currentTime = new Date();
+    currentTime.toLocaleString({timeStyle:"long",hourCycle:"h24"});
+
+    timeLeft = kickoffTime - currentTime;   
+
+    let day6 = Math.floor(timeLeft/(1000*60*60*24));
+    let hour6 = Math.floor((timeLeft%(1000*60*60*24))/(1000*60*60));
+    let minute6 = Math.floor((timeLeft%(1000*60*60))/(1000*60));
+    let second6 = Math.floor((timeLeft%(1000*60))/(1000));
+    
+    document.getElementById("day6").innerHTML = day6 + "<br>day";
+    document.getElementById("hour6").innerHTML = hour6 + "<br>hour";
+    document.getElementById("minute6").innerHTML =  minute6 + "<br>minute";
+    document.getElementById("second6").innerHTML = second6 + "<br>second";
+
+    document.getElementById("day6").style.paddingTop= "50px";
+    document.getElementById("hour6").style.paddingTop= "50px";
+    document.getElementById("minute6").style.paddingTop= "50px";
+    document.getElementById("second6").style.paddingTop= "50px";
+
+   
+}, 1000);
+
+//for countdown button
+
+document.getElementById("btn-secondary").addEventListener("mouseover",function(){
+    document.getElementById("btn-secondary").style.background = "red";
+})
+
+document.getElementById("btn-secondary").addEventListener("mouseout",function(){
+    document.getElementById("btn-secondary").style.background = "#0d6efd" ; 
+})
+
+document.getElementById("btn-secondary").style.background = "#0d6efd" ; 

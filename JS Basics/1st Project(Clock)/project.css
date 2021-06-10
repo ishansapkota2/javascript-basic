@@ -1,3 +1,6 @@
+html, img, video, iframe {
+    filter: invert(1) hue-rotate(180deg);
+}
 html{
     box-sizing: border-box;
   }
@@ -144,12 +147,17 @@ html{
     opacity: 0.8;
 }
 
+#newyorkTime{
+    font-size: larger;
+}
+
 /* DIGITAL CLOCK FOR LA */
 
     #clockLA{
         
        display: flex;
        margin: auto;
+       padding-left: 400px;
     }
 
     #clockLA div{
@@ -230,3 +238,116 @@ html{
     background: rgb(255, 0, 0);
     opacity: 0.8;
 }
+
+
+/*FOR EUROS KICKOFF TIMER*/
+
+.btn-secondary{
+    margin-top: 50px;
+    background-color: #0d6efd;
+}
+
+/* 
+.eurosKickoff{
+        
+    display: flex;
+    margin: auto;
+ }
+
+
+ .eurosKickoff div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0004);
+    margin-bottom: 60px;
+}
+
+.eurosKickoff div span{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: #2196f3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    z-index:  10;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+}
+
+.eurosKickoff div span:nth-child(2){
+    height:30px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;
+} */
+
+div .eurosKickoff
+{
+    display: inherit;
+    margin: auto;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #0004);
+    margin-bottom: 60px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.eurosKickoff div:nth-child(2){
+    height:30px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;
+}
+
+div #day6{
+    height: 120px;
+    width: 88px;
+    background:linear-gradient(transparent, #2196f3);
+    margin-right: 50px;
+    position: relative;
+    text-align: center;
+}
+
+
+div #hour6
+{
+    height: 120px;
+    width: 88px;
+    background: linear-gradient(transparent, #2196f3);
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+
+div #minute6
+{
+    height: 120px;
+    width: 88px;
+    background:linear-gradient(transparent, #2196f3);
+    margin-right: 50px;
+    text-align: center;
+}
+
+
+
+div #second6
+{
+    height: 120px;
+    width: 95px;
+    background: linear-gradient(transparent, #2196f3);
+    text-align: center;
+}
+
